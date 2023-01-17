@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # TODO Remove the CS section to the build file
-#
+# TODO Add variables variable check --> declare defaults if not found
+
 main () {
   install_linux_dependencies
   install_python
@@ -11,6 +12,7 @@ main () {
   install_cs
   install_scala
   install_scala_jupyter_kernel
+  # generate_self_signed_key
 }
 
 install_linux_dependencies () {
@@ -67,6 +69,5 @@ generate_self_signed_key () {
   openssl dhparam -out ${CERT_PATH}/dhparam.pem 4096
 }
 
-###############
-#<<< This is calling the main function, please do not place code past this point.
+###
 main
