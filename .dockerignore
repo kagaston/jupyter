@@ -1,0 +1,12 @@
+.git/
+.github/
+.idea/
+.vscode/
+*.md
+*.log
+.env
+.env.*
+scripts/build.sh
+.gitignore
+.dockerignore
+justfile
